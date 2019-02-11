@@ -1,0 +1,131 @@
+body {
+    margin: 0px;
+    font: 20px "Montserrat", sans-serif;
+    line-height: 1.8;
+}
+button {
+    width: 100px;
+    height: 30px;
+    font-size:15px;
+    color: #474e5d;
+}
+a {
+    text-decoration: none;
+}
+.bg-1 {
+    background-color: #1abc9c; /*Green*/
+    color: #ffffff;
+}
+.bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+}
+.bg-3 {
+    background-color: #ffffff; /* White */
+    color: #555;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.img-circle {
+     border-radius: 50%;
+}
+.img-little {
+    width: 15px;
+    height: 15px;
+}
+.img-size {
+    width: 350px;
+    height: 300px;
+    display: block;
+}
+.img-size_1 {
+    width: 100%;
+    height: 300px;
+    display: inline;
+}
+.row {
+    padding-bottom: 20px;
+}
+.col {
+    width: 350px;
+    padding-left: 30px;
+    display: inline-block;
+}
+.nav {
+    padding: 15px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    font-size:12px;
+    letter-spacing: 5px;
+    width:auto;
+}
+.nav ul {
+    list-style: none;
+}
+.nav ul li a {
+    color: #474e5d;
+}
+.nav ul li a: hover {
+    color: #1abc9c
+}
+.menu {
+    list-style: none;
+    display: inline;
+}
+.menu li {
+    display: inline;
+    float:right;
+    padding-right:15px;
+}
+.menu li a:hover {
+    color: #1abc9c;
+}
+.toggle, 
+[id^=drop] {
+    display: none;
+}
+@media screen and (max-width:1000px) {
+  .toggle + ul li a,
+  .menu {
+    display: none;
+  }
+  /* Stylinf the toggle lable */
+  .toggle {
+    display: inline-block;
+    float: left;
+  }
+  [id^=drop]:checked + ul {
+    display: block;
+  }
+   .nav {
+    display: block;
+    width:auto;
+    height:10%;
+    margin: 0;
+    text-align: right;
+  }
+  /* Change menu item's width to 100% */
+  .nav ul li {
+    display: inline-block;
+    width: 100%;
+    position: left;
+    padding:0;
+    float:inherit;
+  }
+  .nav ul {
+    position: left;
+    width:auto;
+    margin:15px;
+  }
+  .me {
+    display: inline; 
+    margin:15px;
+   }
+  .icon_size {
+    display: inline;
+    width:30px;
+    height:20px;
+  }
+}
